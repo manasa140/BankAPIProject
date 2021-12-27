@@ -1,0 +1,17 @@
+
+<button (click)="loadData()"class="btn btn-dark">
+Load image
+</button>
+<button (click)="loadData1()"class="btn btn-dark">
+    Load image
+    </button>
+<button (click)="loadData2()"class="btn btn-dark">
+        Load image
+</button>
+<button (click)="loadData3()"class="btn btn-dark">
+    Load image
+</button>
+<hr>
+<div id="container">
+<img src = "imgLoad" alt=" " [lazyLoad]="image$ | async">
+</div>

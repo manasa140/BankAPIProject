@@ -1,0 +1,29 @@
+.custom-file-upload{
+    margin: 10px auto;
+    background-color:rgb(248, 249, 250) ;
+    height: 300px;
+}
+.img-fluid{
+    margin-top:60px;
+}
+h1{
+    color: rgb(7, 1, 58);
+    padding: 5px;
+    text-align: center;
+}
+input{
+    width: 500px;
+    padding: 5px;
+    margin: 0 auto;
+    color: red;
+}
+.btn{
+    width: 100px;
+    padding: 5px;
+    margin-left:550px;
+    margin-top: 10px;
+}
+.result{
+    text-align: center;
+    padding : 5px;
+}
