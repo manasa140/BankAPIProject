@@ -1,17 +1,48 @@
 
-<button (click)="loadData()"class="btn btn-dark">
-Load image
-</button>
-<button (click)="loadData1()"class="btn btn-dark">
-    Load image
-    </button>
-<button (click)="loadData2()"class="btn btn-dark">
-        Load image
-</button>
-<button (click)="loadData3()"class="btn btn-dark">
-    Load image
-</button>
-<hr>
-<div id="container">
-<img src = "imgLoad" alt=" " [lazyLoad]="image$ | async">
+<div class ="container">
+   
+    <div class="row">
+        <div class="col-xs-6 col-sm-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/pic1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Daywise Expenditure</h5>
+                  <p class="card-text">This graph shows your daily expenditure.</p>
+                  <button (click)="loadData()"class="btn btn-primary">Load Graph</button>                
+                                     
+                </div>
+              </div>
+        </div>        
+        <div class="col-xs-6 col-sm-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/pic2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Everyday Balance</h5>
+                  <p class="card-text">This graph shows your balance on each day.</p>
+                  <button (click)="loadData1()"class="btn btn-primary">Load Graph</button>
+                </div>
+              </div>
+        </div>     
+        <div class="col-xs-6 col-sm-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/pic3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Debit Description</h5>
+                  <p class="card-text">This graph shows your total debit description.</p>
+                  <button (click)="loadData2()"class="btn btn-primary">Load Graph</button>
+                </div>
+              </div>
+        </div>     
+        <div class="col-xs-6 col-sm-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/pic4.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Everyday Debits</h5>
+                  <p class="card-text">This graph shows your everyday debits.</p>
+                  <button (click)="loadData3()"class="btn btn-primary">Load Graph</button>
+                </div>
+              </div>
+        </div>     
+    </div>
+    <img src = "imgLoad" alt=" " [lazyLoad]="image$ | async">
 </div>
